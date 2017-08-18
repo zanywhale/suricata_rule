@@ -1,0 +1,53 @@
+# http://
+alert tcp any any -> any 80 (msg:"hitomi.la rule!"; content:"GET /";content:"Host: hitomi.la";sid:1001; rev:1;)
+alert tcp any any -> any 80 (msg:"kass.org.kp rule!"; content:"Host: kass.org.kp";sid:1002; rev:1;)
+alert tcp any any -> any 80 (msg:"kcna.kp rule!"; content:"Host: kcna.kp";sid:1003; rev:1;)
+alert tcp any any -> any 80 (msg:"ks8282.com rule!"; content:"Host: ks8282.com";sid:1004; rev:1;)
+alert tcp any any -> any 80 (msg:"naevr.com rule!"; content:"Host: naevr.com";sid:1005; rev:1;)
+alert tcp any any -> any 80 (msg:"naver6.com rule!"; content:"Host: naver6.com";sid:1006; rev:1;)
+alert tcp any any -> any 80 (msg:"onaratv.com rule!"; content:"Host: onaratv.com";sid:1007; rev:1;)
+alert tcp any any -> any 80 (msg:"pornpros.com rule!"; content:"Host: pornpros.com";sid:1008; rev:1;)
+alert tcp any any -> any 80 (msg:"rodong.rep.kp rule!"; content:"Host: rodong.rep.kp";sid:1009; rev:1;)
+alert tcp any any -> any 80 (msg:"uriminzokkiri.com rule!"; content:"Host: uriminzokkiri.com";sid:1010; rev:1;)
+
+# http://
+alert tcp any any -> any 80 (msg:"4shared.com rule!"; content:"Host: 4shared.com";sid:1011; rev:1;)
+alert tcp any any -> any 80 (msg:"bamwar25.com rule!"; content:"Host: bamwar25.com";sid:1012; rev:1;)
+alert tcp any any -> any 80 (msg:"faa25.com rule!"; content:"Host: faa25.com";sid:1013; rev:1;)
+alert tcp any any -> any 80 (msg:"kimmadam.net rule!"; content:"Host: kimmadam.net";sid:1014; rev:1;)
+alert tcp any any -> any 80 (msg:"minjok.com rule!"; content:"Host: minjok.com";sid:1015; rev:1;)
+alert tcp any any -> any 80 (msg:"narutoxxx.com rule!"; content:"Host: narutoxxx.com";sid:1016; rev:1;)
+alert tcp any any -> any 80 (msg:"naver.cm rule!"; content:"Host: naver.cm";sid:1017; rev:1;)
+alert tcp any any -> any 80 (msg:"ryomyong.com rule!"; content:"Host: ryomyong.com";sid:1018; rev:1;)
+alert tcp any any -> any 80 (msg:"sedisk.com rule!"; content:"Host: sedisk.com";sid:1019; rev:1;)
+alert tcp any any -> any 80 (msg:"sk386.com rule!"; content:"Host: sk386.com";sid:1020; rev:1;)
+alert tcp any any -> any 80 (msg:"tcosc.net rule!"; content:"Host: tcosc.net";sid:1021; rev:1;)
+alert tcp any any -> any 80 (msg:"torenzoa.net rule!"; content:"Host: torenzoa.net";sid:1022; rev:1;)
+alert tcp any any -> any 80 (msg:"umj262.com rule!"; content:"Host: umj262.com";sid:1023; rev:1;)
+alert tcp any any -> any 80 (msg:"uriminzokkiri.com rule!"; content:"Host: uriminzokkiri.com";sid:1024; rev:1;)
+
+# http://~~~/[PATH]
+alert tcp any any -> any 80 (msg:"linoit.com/users/men1212/canvases/19%EA%B8%88%20 rule"; content:"Host: linoit.com"; content:"Referer: http://linoit.com/users/men1212/canvases/19%EA%B8%88%20"; sid:1025; rev:1;)
+alert tcp any any -> any 80 (msg:"named.com/game/ladder/v2_index.php rule"; content:"Host: named.com"; content:"GET /game/ladder/v2_index.php"; sid:1026; rev:1;)
+alert tcp any any -> any 80 (msg:"kitribob.wiki/wiki rule"; content:"Host: kitribob.wiki"; content:"GET /wiki"; sid:1027; rev:1;)
+alert tcp any any -> any 80 (msg:"snoopspy.com/download rule"; content:"Host: snoopspy.com"; content:"GET /download"; sid:1028; rev:1;)
+alert tcp any any -> any any (msg:"test.gilgil.net & .mp4 fitest.gilgille rule"; content:".mp4";content: "Host: test.gilgil.net"; sid:1029; rev:1;)
+alert tcp any any -> any 80 (msg:"www.ilbe.com/ilbe"; content:"Host: www.ilbe.com"; content:"GET /ilbe"; sid:1030; rev:1;)
+alert tcp any any -> any 80 (msg:"www.winclub88.net/my/4D.html"; content:"Host: www.winclub88.net"; content:"GET /my/4D.html"; sid:1031; rev:1;)
+
+# https://
+alert tcp any any -> any 80 (msg:"mujige53770.wixsite.com rule"; content:"Host: mujige53770.wixsite.com"; sid:1032; rev:1;)
+alert tcp any any -> any 80 (msg:"graphgame.net rule"; content:"Host: graphgame.net"; sid:1033; rev:1;)
+alert tcp any any -> any 80 (msg:"sex.com rule"; content:"Host: sex.com"; sid:1034; rev:1;)
+alert tcp any any -> any 80 (msg:"torrenthaja.com rule"; content:"Host: torrenthaja.com"; sid:1035; rev:1;)
+alert tcp any any -> any 80 (msg:"torrentkim10.net rule"; content:"Host: torrentkim10.net"; sid:1036; rev:1;)
+alert tcp any any -> any 80 (msg:"webtoon.bamtoki.com rule"; content:"Host: webtoon.bamtoki.com"; sid:1037; rev:1;)
+alert tcp any any -> any 80 (msg:"www.mtbucks.com rule"; content:"Host: www.mtbucks.com"; sid:1038; rev:1;)
+alert tcp any any -> any 80 (msg:"www.phishtank.com rule"; content:"Host: www.phishtank.com"; sid:1039; rev:1;)
+
+# https://~~~/[PATH]
+# Cannnot filtering...
+# https://yobit.net/en/dice/
+# https://www.opioids.com/offshorepharmacy/index.html
+# https://www.facebook.com/profile.php?id=100019007882633
+
