@@ -31,7 +31,7 @@ alert tcp any any -> any 80 (msg:"linoit.com/users/men1212/canvases/19%EA%B8%88%
 alert tcp any any -> any 80 (msg:"named.com/game/ladder/v2_index.php rule"; content:"Host: named.com"; content:"GET /game/ladder/v2_index.php"; sid:1026; rev:1;)
 alert tcp any any -> any 80 (msg:"kitribob.wiki/wiki rule"; content:"Host: kitribob.wiki"; content:"GET /wiki"; sid:1027; rev:1;)
 alert tcp any any -> any 80 (msg:"snoopspy.com/download rule"; content:"Host: snoopspy.com"; content:"GET /download"; sid:1028; rev:1;)
-alert tcp any any -> any any (msg:"test.gilgil.net & .mp4 fitest.gilgille rule"; content:".mp4";content: "Host: test.gilgil.net"; sid:1029; rev:1;)
+alert tcp any any -> any any (msg:"test.gilgil.net & .mp4 fitest.gilgille rule"; content:".mp4 HTTP/1.";content: "Host: test.gilgil.net"; sid:1029; rev:1;)
 alert tcp any any -> any 80 (msg:"www.ilbe.com/ilbe"; content:"Host: www.ilbe.com"; content:"GET /ilbe"; sid:1030; rev:1;)
 alert tcp any any -> any 80 (msg:"www.winclub88.net/my/4D.html"; content:"Host: www.winclub88.net"; content:"GET /my/4D.html"; sid:1031; rev:1;)
 
